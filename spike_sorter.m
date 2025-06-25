@@ -23,7 +23,7 @@ thresholdSetValue = 40;
 pnameToSave = uigetdir(pname, 'Please select the folder to save the processed files');
 
 % ==================== Run Spike Sorting Core ========================
-results = spike_sorter_core(fname, pname, 20, 150);
+results = spike_sorter_core(fname, pname, 0, 15);
 
 % ==================== Load Data Fields ==============================
 fnamePrefix = results.fnamePrefix;
