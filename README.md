@@ -1,4 +1,4 @@
-This is a set of custom LabVIEW MATLAB code for analyzing neural activities recorded from Intan RHD 2000 system.
+This is a set of custom LabVIEW MATLAB code for analyzing neural activities recorded from Intan RHD 2000 system in Jiang et al., "An ultrasound-scanning in vivo light source".
 
 To use the code, see specific instructions inside each file for details.
 
