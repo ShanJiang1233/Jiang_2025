@@ -16,14 +16,14 @@ set(0, 'DefaultFigureWindowStyle', 'docked');
 % ========================== Parameters ==============================
 unfilteredPlotOffset = 2000;
 filteredPlotOffset = 30;
-thresholdSetValue = 25;
+thresholdSetValue = 40;
 
 % ========================== File I/O ================================
 [fname, pname] = uigetfile('*.*', 'Please select the Intan file to open');
 pnameToSave = uigetdir(pname, 'Please select the folder to save the processed files');
 
 % ==================== Run Spike Sorting Core ========================
-results = spike_sorter_Guosong_core(fname, pname, 20, 150);
+results = spike_sorter_core(fname, pname, 20, 150);
 
 % ==================== Load Data Fields ==============================
 fnamePrefix = results.fnamePrefix;
